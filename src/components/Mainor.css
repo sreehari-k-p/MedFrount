@@ -1,0 +1,56 @@
+.container-main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background-image: url("C:\Users\kpsre\Downloads\OR.webp");
+    background-size: cover;
+    background-position: center;
+    animation: slide 60s ease-in infinite;
+   }
+   
+   @keyframes slide {
+     0% {
+       transform: translateX(0%);
+    }
+     50% {
+       transform: translateX(50%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+   }
+   
+  
+  
+  .head-main{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  
+  .head-main h1{
+    font-size: 60px;
+  }
+  
+  .head-main p{
+    font-size: 23px;
+    font-weight: 400;
+    text-align: start;
+  }
+  
+  

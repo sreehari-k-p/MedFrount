@@ -1,0 +1,70 @@
+@keyframes viewAnimation {
+    0% {
+        transform: scale(0.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.organ-donation-page {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    backdrop-filter: blur(5px);
+    padding-left: 50px;
+    animation-name: viewAnimation;
+    animation-timeline: view();
+}
+
+
+.organ-donation-page h1,
+.organ-donation-page h2,
+.organ-donation-page h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.organ-donation-page h1 {
+    font-size: 50px;
+}
+
+.organ-donation-page h2 {
+    font-size: 50px;
+}
+
+.organ-donation-page p {
+    margin-bottom: 20px;
+}
+
+.organ-donation-page ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: start;
+}
+
+.organ-donation-page li{
+    width: 50%;
+}
+
+.organ-donation-page ul li::before {
+    content: "• ";
+    color: #ff0000;
+}
+
+.organ-donation-page ul li {
+    margin-bottom: 10px;
+}
+
+.or-conatiner{
+    display: flex;
+}
